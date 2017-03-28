@@ -1,0 +1,16 @@
+#home .row .card{padding: 10px 10px;}
+#home .row .card form button{display: table;margin: 0 auto;}
+
+/* label focus color */
+#home .row .card form .input-field input[type=text]:focus + label {
+ color: #000;
+}
+/* label underline focus color */
+#home .row .card form .input-field input[type=text]:focus {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+
+#home .row .card form .input-field .prefix.active{
+ color: #1565C0 !important;
+}
