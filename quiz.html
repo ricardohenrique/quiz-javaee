@@ -15,10 +15,10 @@
 	<script type="text/javascript" src="plugin/materialize/js/materialize.min.js"></script>
 </head>
 <body>
-	<div class="container" id="home">
+	<div class="container" id="quiz">
 		<form action="#" class="row">
 			<div class="col s12" id="question-01">
-				<p>01 - O que significa HTML?</p>
+				<h3 class="question-title">01 - O que significa HTML?</h3>
 				<p>
 					<input class="with-gap" name="question-01" type="radio" id="question-01-choose-01"  />
 					<label for="question-01-choose-01">Linguagem de programação pra WEB</label>
@@ -42,7 +42,7 @@
 				<div class="waves-effect waves-light btn cyan accent-4" id="next-01">Próximo</div>
 			</div>
 			<div class="col s12" id="question-02">
-				<p>02 - O que significa HTML?</p>
+				<h3 class="question-title">02 - O que significa HTML?</h3>
 				<p>
 					<input class="with-gap" name="question-02" type="radio" id="question-02-choose-01"  />
 					<label for="question-02-choose-01">Linguagem de programação pra WEB</label>
@@ -63,10 +63,11 @@
 					<input class="with-gap" name="question-02" type="radio" id="question-02-choose-05"  />
 					<label for="question-02-choose-05">HyperText Markup Language</label>
 				</p>
+				<div class="waves-effect waves-light btn cyan accent-4" id="back-02">Voltar</div>
 				<div class="waves-effect waves-light btn cyan accent-4" id="next-02">Próximo</div>
 			</div>
 			<div class="col s12" id="question-03">
-				<p>03 - O que significa HTML?</p>
+				<h3 class="question-title">03 - O que significa HTML?</h3>
 				<p>
 					<input class="with-gap" name="question-03" type="radio" id="question-03-choose-01"  />
 					<label for="question-03-choose-01">Linguagem de programação pra WEB</label>
@@ -87,15 +88,18 @@
 					<input class="with-gap" name="question-03" type="radio" id="question-03-choose-05"  />
 					<label for="question-03-choose-05">HyperText Markup Language</label>
 				</p>
+				<div class="waves-effect waves-light btn cyan accent-4" id="back-03">Voltar</div>
 			</div>
 		</form>
 	</div>
 
 		<script type="text/javascript">
+			// -----init-----
 			var timeHide = 500;
 			var timeShow = 1000;
 			$('#question-02').hide();
 			$('#question-03').hide();
+			// -----next-----
 			$("#next-01").click(function(){
 				$('#question-01').hide(timeHide);
 				$('#question-02').show(timeShow);
@@ -103,6 +107,15 @@
 			$("#next-02").click(function(){
 				$('#question-02').hide(timeHide);
 				$('#question-03').show(timeShow);
+			});
+			// -----back-----
+			$("#back-02").click(function(){
+				$('#question-02').hide(timeHide);
+				$('#question-01').show(timeShow);
+			});
+			$("#back-03").click(function(){
+				$('#question-03').hide(timeHide);
+				$('#question-02').show(timeShow);
 			});
 		</script>
 
