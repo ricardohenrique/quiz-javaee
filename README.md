@@ -16,7 +16,10 @@ Para utilizar o projeto você deve:
 # Participantes
 
 Guilherme Brandão dos Santos  ```https://github.com/GuilhermeBrandaoSantos ```
+
 Jhonny Messias Rohr ```https://github.com/JhonnyRohr```
+
 Tatiana Guilger ```https://github.com/tatianaguilger```
+
 Ricardo Henrique Benevides Mota ```https://github.com/ricardohenrique```
   
