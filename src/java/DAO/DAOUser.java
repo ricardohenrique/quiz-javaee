@@ -45,6 +45,7 @@ public class DAOUser {
         } 
         catch (SQLException ex) 
         {
+            System.out.println(ex);
             //Logger.getLogger(conexao.class.getName()).log(Level.SEVERE, null, ex);
             //status = ("Erro: " + ex.getMessage());
 //            return ("Erro: " + ex.getMessage());

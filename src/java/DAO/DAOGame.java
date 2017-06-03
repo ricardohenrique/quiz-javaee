@@ -19,11 +19,13 @@ public class DAOGame {
      public boolean insert(ModelGame game) { 
         try 
         {
+            String query = "insert into game values (null, " + game.getPlayerId() + ");";
+            System.out.print("QUERY DE GAME: " + query);
             //conecta ao BD
             Connection connection = new Connection();
             
             //define a instruçao de inclusao
-            PreparedStatement prepared = connection.getConexao().prepareStatement("insert into game values (null, null, " + game.getPlayerId() + ");");
+            PreparedStatement prepared = connection.getConexao().prepareStatement(query);
             
             //executa a instrução(entrega ao BD)
             prepared.execute();                 

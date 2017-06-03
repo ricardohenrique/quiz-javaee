@@ -51,7 +51,8 @@ public class ServletUser extends HttpServlet {
             boolean validateUser = user.insert();
             boolean validateGame = game.insert();
             
-            System.out.println("Aqui: " + validateGame);
+            System.out.print("USUARIO INSERIDO: " + validateUser);
+            System.out.print("GAME INSERIDO: " + validateGame);
             
             HttpSession session = request.getSession();
             session.setAttribute("name", user.getName());
