@@ -1,0 +1,4 @@
+body{overflow:auto;}
+#resultado .row div{color:#fff;}
+#resultado .row div h1{font-size:30px;}
+#resultado .row table{background-color: #dadada;border-radius: 3px;}

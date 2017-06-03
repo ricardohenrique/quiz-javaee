@@ -1,0 +1,26 @@
+#quiz .row div{color:#e2e2e2;}
+#quiz .row div h1{
+    color: #e2e2e2;
+    text-align: center;
+    font-size: 40px;
+    margin: 10px auto;
+    margin-bottom: 0px;
+}
+#quiz form{min-height: 500px;background-color: rgba(255, 255, 255, 0.55);border-radius: 3px;padding: 15px 25px;}
+#quiz .row div .question-title{font-size:20px;color: #171717;}
+#quiz .row div p{}
+#quiz .row div p label{color:#171717;font-size: 17px;}
+#quiz .row div .btn{margin-left: 10px;margin-top: 15px;}
+#quiz .btn#send-quiz{
+    margin: 0px auto;
+    top: 20px;
+    display: block;
+    min-width: 200px;
+    background-color: #1b1b1b!important;
+}
+
+
+
+[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after{
+    border: 2px solid #000000;
+}

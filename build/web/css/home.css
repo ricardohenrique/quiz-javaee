@@ -1,0 +1,18 @@
+#home .row .card{margin-top: 15%;padding: 10px 10px;background-color: rgba(255, 255, 255, 0.7);}
+#home .row .card form button{display: table;margin: 0 auto;background-color: #1e2021!important;transition: all 0.2s;}
+#home .row .card form button:hover{background-color: #1565c0!important;transition: all 0.2s;}
+
+/* label focus color */
+#home .row .card form .input-field input[type=text]:focus + label {
+ color: #1565c0;
+}
+
+/* label underline focus color */
+#home .row .card form .input-field input[type=text]:focus {
+ border-bottom: 1px solid #1565c0;
+ box-shadow: 0 1px 0 0 #1565c0;
+}
+
+#home .row .card form .input-field .prefix.active{
+ color: #1565C0 !important;
+}
