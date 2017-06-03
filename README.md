@@ -6,7 +6,7 @@ Para utilizar o projeto você deve:
 
   - Baixar o projeto com o comando: 
      ```sh
-    git clone https://github.com/ricardohenrique/quiz-javaee.git
+    $ git clone https://github.com/ricardohenrique/quiz-javaee.git
     ```
   - Inicializar o servidor "Glassfish";
   - Startar o banco com o nome "quiz" de acordo com o que esta descrito no scripit de criação do banco que esta localizado no pacote "DataBase";
